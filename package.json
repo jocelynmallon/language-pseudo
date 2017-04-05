@@ -2,13 +2,16 @@
   "name": "language-pseudo",
   "version": "0.0.0",
   "description": "A short description of your package",
-  "keywords": [
-  ],
+  "keywords": [],
   "repository": "https://github.com/atom/language-pseudo",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
+  "dependencies": {},
+  "apmInstallSource": {
+    "type": "git",
+    "source": "https://github.com/jocelynmallon/language-pseudo",
+    "sha": "75ef75c0c732e585abe60548bc0e69befd029ddd"
   }
 }

@@ -1,8 +1,8 @@
 fileTypes: [
   "pseudocode"
 ]
-#foldingStartMarker: "/\\*\\*|\\{\\s*$"
-#foldingStopMarker: "\\*\\*/|^\\s*\\}"
+foldingStartMarker: "/\\*\\*|\\{\\s*$"
+foldingStopMarker: "\\*\\*/|^\\s*\\}"
 name: "pseudocode"
 patterns: [
   {
