@@ -27,11 +27,11 @@ patterns: [
   }
   {
     match: "([\\(](?![\\)])){1}"
-    name: "punctuation.definition.arguments.begin.pseudocode"
+    name: "meta.begin.brace.round.pseudocode"
   }
   {
     match: "((?<![\\(])[\\)])"
-    name: "punctuation.definition.arguments.end.pseudocode"
+    name: "meta.end.brace.round.pseudocode"
   }
   {
     match: "\\b(Let|PatternCount|Left|Right|input|output)\\b"
@@ -50,7 +50,7 @@ patterns: [
     name: "entity.name.section.pseudocode"
   }
   {
-    match: "\\b(Declarations)\\b(?![?!])"
+    match: "\\b(Declarations|count)\\b(?![?!])"
     name: "constant.language.pseudocode"
   }
   {
