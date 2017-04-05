@@ -1,0 +1,89 @@
+fileTypes: [
+  "pseudocode"
+]
+#foldingStartMarker: "/\\*\\*|\\{\\s*$"
+#foldingStopMarker: "\\*\\*/|^\\s*\\}"
+name: "pseudocode"
+patterns: [
+  {
+    match: "(([\\<\\=]|[\\>\\=]|[\\<\\>]|[\\=\\=]){2}|([\\>]|[\\≠]|[\\<]){1})"
+    name: "keyword.operator.comparison.pseudocode"
+  }
+  {
+    match: "(?<![\\/|\\*])([\\+]|[\\-]|[\\*]|[\\/])(?![\\/|\\*])"
+    name: "keyword.operator.arithmetic.pseudocode"
+  }
+  {
+    match: "(nil|true|false|not|NOT|or|OR|and|AND)(?![a-z|A-Z])"
+    name: "keyword.operator.logical.pseudocode"
+  }
+  {
+    match: "\\="
+    name: "keyword.operator.assignment.pseudocode"
+  }
+  {
+    match: "\\b(If|While|Case|Then|Else|Unless|Each|For|End|EndIf|EndWhile|if|while|else|then|unless|each|for|endif|endwhile|end|case)\\b"
+    name: "keyword.control.pseudocode"
+  }
+  {
+    match: "([\\(](?![\\)])){1}"
+    name: "punctuation.definition.arguments.begin.pseudocode"
+  }
+  {
+    match: "((?<![\\(])[\\)])"
+    name: "punctuation.definition.arguments.end.pseudocode"
+  }
+  {
+    match: "\\b(Let|PatternCount|Left|Right|input|output)\\b"
+    name: "support.function.pseudocode"
+  }
+  {
+    match: "([a-zA-Z0-9]+([\(\)]{2}))"
+    name: "entity.name.function.pseudocode"
+  }
+  {
+    match: "\\b(start|stop)\\b"
+    name: "markup.bold.pseudocode"
+  }
+  {
+    match: "\\b(return)\\b"
+    name: "entity.name.section.pseudocode"
+  }
+  {
+    match: "\\b(Declarations)\\b(?![?!])"
+    name: "constant.language.pseudocode"
+  }
+  {
+    match: "(?=[:space:]*)\\b(string|num)\\b"
+    name: "storage.type.language.pseudocode"
+  }
+  {
+    match: "([A-Z0-9]*[a-z][a-z0-9]*[A-Z]|[a-z0-9]*[A-Z][A-Z0-9]*[a-z])[A-Za-z0-9]*"
+    name: "variable.parameter.pseudocode"
+  }
+  {
+    match: "((?<![a-z])([A-Z]{4,})(?![a-z]))"
+    name: "variable.other.constant.pseudocode"
+  }
+  {
+    match: "([/\\/]{2}.*)"
+    name: "comment.line.pseudocode"
+  }
+  {
+    begin: "\\/\\*.*"
+    end: ".*\\*\\/"
+    name: "comment.block.pseudocode"
+  }
+  {
+    begin: "\""
+    end: "\""
+    name: "string.quoted.double.pseudocode"
+    patterns: [
+      {
+        match: "\\\\."
+        name: "constant.character.escape.pseudocode"
+      }
+    ]
+  }
+]
+scopeName: "source.pseudocode"
