@@ -22,7 +22,7 @@ patterns: [
     name: "keyword.operator.assignment.pseudocode"
   }
   {
-    match: "\\b(If|While|Case|Then|Else|Unless|Each|For|End|EndIf|EndWhile|EndFor|if|while|else|then|unless|each|for|endif|endwhile|endfor|end|case)\\b"
+    match: "\\b(If|While|Case|Then|Else|Unless|Each|For|End|EndIf|EndWhile|EndFor|if|while|else|then|unless|each|for|endif|endwhile|endfor|end|case|to|step)\\b"
     name: "keyword.control.pseudocode"
   }
   {
@@ -34,12 +34,24 @@ patterns: [
     name: "meta.end.brace.round.pseudocode"
   }
   {
+    match: "([\\(](?=[\\)])){1}"
+    name: "punctuation.definition.parameters.begin.bracket.round.pseudocode"
+  }
+  {
+    match: "((?<=[\\(])[\\)])"
+    name: "punctuation.definition.parameters.end.bracket.round.pseudocode"
+  }
+  {
     match: "\\b(Let|PatternCount|Left|Right|input|output)\\b"
     name: "support.function.pseudocode"
   }
   {
-    match: "([a-zA-Z0-9]+([\(\)]{2}))"
+    match: "(^(([a-zA-Z0-9])+(?=[\\(\\)]{2})))"
     name: "entity.name.function.pseudocode"
+  }
+  {
+    match: "((([a-zA-Z0-9])+(?=[\\(\\)]{2}[\\r|\\n|\\r\\n])))"
+    name: "meta.function-call.pseudocode"
   }
   {
     match: "\\b(start|stop)\\b"
