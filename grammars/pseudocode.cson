@@ -22,7 +22,7 @@ patterns: [
     name: "keyword.operator.assignment.pseudocode"
   }
   {
-    match: "\\b(If|While|Case|Then|Else|Unless|Each|For|End|EndIf|EndWhile|if|while|else|then|unless|each|for|endif|endwhile|end|case)\\b"
+    match: "\\b(If|While|Case|Then|Else|Unless|Each|For|End|EndIf|EndWhile|EndFor|if|while|else|then|unless|each|for|endif|endwhile|endfor|end|case)\\b"
     name: "keyword.control.pseudocode"
   }
   {
