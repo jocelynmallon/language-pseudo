@@ -15,5 +15,5 @@
     "atom": "*",
     "node": "*"
   },
-  "dependencies": {},
+  "dependencies": {}
 }
