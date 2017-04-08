@@ -5,19 +5,14 @@
   "keywords": ["pseudocode", "pseudo"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jocelynmallon/language-pseudo",
+    "url": "https://github.com/jocelynmallon/language-pseudo"
   },
   "bugs": {
     "url": "https://github.com/jocelynmallon/language-pseudo/issues"
   },
   "license": "MIT",
   "engines": {
-    "atom": ">=1.0.0 <2.0.0"
+    "atom": "*"
   },
   "dependencies": {},
-  "apmInstallSource": {
-    "type": "git",
-    "source": "https://github.com/jocelynmallon/language-pseudo",
-    "sha": "75ef75c0c732e585abe60548bc0e69befd029ddd"
-  }
 }
