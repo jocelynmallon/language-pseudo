@@ -1,8 +1,8 @@
 {
   "name": "language-pseudo",
   "version": "0.1.0",
-  "description": "syntax highlighting for 'pseudocode' (used in programming logic and design 8e.)",
-  "keywords": ["pseudocode", "pseudo"],
+  "description": "syntax highlighting for pseudocode, as in programming logic and design 8e.",
+  "keywords": ["pseudocode"],
   "repository": {
     "type": "git",
     "url": "https://github.com/jocelynmallon/language-pseudo"
@@ -12,7 +12,8 @@
   },
   "license": "MIT",
   "engines": {
-    "atom": "*"
+    "atom": "*",
+    "node": "*"
   },
   "dependencies": {},
 }

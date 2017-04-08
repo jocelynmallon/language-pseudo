@@ -1,4 +1,4 @@
-# language-pseudo package
+# language-pseudo
 
 Pseudocode language grammar
 
