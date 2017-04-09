@@ -1,6 +1,6 @@
 {
-  "name": "language-pseudo",
-  "version": "0.1.0",
+  "name": "language-pseudocode",
+  "version": "0.0.0",
   "description": "syntax highlighting for pseudocode, as in programming logic and design 8e.",
   "keywords": ["pseudocode"],
   "repository": {
@@ -12,7 +12,7 @@
   },
   "license": "MIT",
   "engines": {
-    "atom": "*",
+    "atom": ">=1.0.0 <2.0.0",
     "node": "*"
   },
   "dependencies": {}

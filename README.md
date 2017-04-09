@@ -1,4 +1,4 @@
-# language-pseudo
+# language-pseudocode
 
 Pseudocode language grammar
 
