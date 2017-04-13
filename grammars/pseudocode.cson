@@ -1,5 +1,7 @@
 fileTypes: [
   "pseudocode"
+  "pseudo"
+  "pso"
 ]
 foldingStartMarker: "/\\*\\*|\\{\\s*$"
 foldingStopMarker: "\\*\\*/|^\\s*\\}"
@@ -40,6 +42,10 @@ patterns: [
   {
     match: "((?<=[\\(])[\\)])"
     name: "punctuation.definition.parameters.end.bracket.round.pseudocode"
+  }
+  {
+    match: "([,]{1})"
+    name: "punctuation.separator.list.pseudocode"
   }
   {
     match: "([\\[])"
