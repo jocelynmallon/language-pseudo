@@ -88,7 +88,7 @@ patterns: [
     name: "constant.language.pseudocode"
   }
   {
-    match: "(?=[:space:]*)\\b(string|num)\\b"
+    match: "(?=[:space:]*)\\b(string|num|InputFile|OutputFile)\\b"
     name: "storage.type.language.pseudocode"
   }
   {
