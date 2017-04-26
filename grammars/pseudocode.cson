@@ -56,7 +56,7 @@ patterns: [
     name: "meta.end.brace.square.pseudocode"
   }
   {
-    match: "\\b(Let|PatternCount|Left|Right|input|output)\\b"
+    match: "\\b(Let|PatternCount|Left|Right|input|output|open|close)\\b"
     name: "support.function.pseudocode"
   }
   {
@@ -84,7 +84,7 @@ patterns: [
     name: "entity.name.section.pseudocode"
   }
   {
-    match: "\\b(Declarations|count)\\b(?![?!])"
+    match: "\\b(Declarations|count|EOF|eof)\\b(?![?!])"
     name: "constant.language.pseudocode"
   }
   {
