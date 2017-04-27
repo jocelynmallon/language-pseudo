@@ -1,6 +1,6 @@
 {
   "name": "language-pseudocode",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "syntax highlighting for pseudocode, as in programming logic and design 8e.",
   "keywords": [
     "pseudocode"
